@@ -1,0 +1,1294 @@
+:root{
+  --main-color:hsl(180, 79%, 32%);
+  --grey-color:grey;
+}
+
+::-webkit-scrollbar {
+  width: 0.7vw;
+  height:1vh;
+}
+ 
+::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 4px;
+}
+
+body {
+  font-family: Arial;
+  margin:0;
+}
+/*..........................navigation.....................*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom:  10px ;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 5px 8px -5px var(--main-color);
+}
+
+.logo,.logo1{
+  width: 6vw;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;  
+}
+
+.nav-icons{
+  width: 3vw;
+  display:flex;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: #070000;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+ 
+}
+
+nav ul li a:hover {
+  background-color: #ccdbd5;
+}
+
+
+/*...............................home-page......................................*/
+.home{
+  min-height: 90vh;
+}
+.home , .about {
+  box-sizing: border-box;
+ /* width: 100%;*/
+  display:block;
+  grid-template-columns: 50% 50%;
+  padding: 3vh;
+  text-align: justify;
+  margin-top: 5vh;
+  display: grid; 
+}
+.home{
+  background-image: url(image/bg.png);
+  background-size:contain;
+  background-position: center;
+}
+.book-store-color {
+  color: var(--main-color);
+ 
+}
+h1{
+  font-size: 3rem;
+}
+.welcome-page h1{
+  animation: pulse 3s 1;
+}
+@keyframes pulse {
+  0% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 3rem;
+  }
+}
+.btn{
+  padding: 0.7vw 2.5vh;
+  margin: 6vh 0vw;
+  background-color: var(--main-color);
+  color: #fff;
+  text-decoration: none;
+  width: fit-content;
+  text-align: center; 
+}
+.btn:hover{
+  background-color: #144d4a;
+}
+.btn1:hover{
+  background-color: #ccdbd5;
+}
+
+.home-img{
+width: 100%;
+margin-top: 2vh;
+height: 70%;
+}
+.about-img{
+  width: 100%;
+  margin-top: 2vh;
+  }
+.welcome-page ,.about-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*...............................all-featured...................................*/
+.all-featured{ 
+  box-sizing: border-box;
+  display: flex;  
+}
+.Featured{   
+  display: flex;
+  margin: 1.5vw;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 2px var(--main-color);
+  border-radius: 2px;
+  text-align: center; 
+}
+.Featured-icon{
+  
+  font-size: 2.5vw;
+  color: var(--main-color);
+}
+.Featured p{
+  margin: 5px;
+  padding-bottom: 1vh;
+}
+.Featured i{
+  margin: 5px;
+  padding-top: 1vh;
+}
+.Featured p:first-of-type{
+ font-weight: 600;
+}
+
+/*......................................................................*/
+.container  {
+  margin: 5vh;
+  overflow-x: auto;
+}
+
+.books {
+  box-sizing: border-box;
+  white-space: nowrap;
+  margin: 2vh;
+  
+}
+
+.books div {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 17vw;
+  height: 65vh;
+  margin-right:  2vw;
+  border: var(--grey-color)solid 1px;
+}
+
+.books div:hover {
+  overflow: visible;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 17vw;
+  height: 65vh;
+  margin: 0px 2vw 0px 0px;
+  background-color: #ffffff;
+  border: rgb(151, 150, 150) solid 1px;
+  box-shadow: 0px 0px 5px 3px hsl(180, 53%, 69%);
+}
+.container h1 {
+ text-align: center;
+}
+.featured-book ,.arrival-books{
+  padding-top: 1vh;
+  text-align: center;
+}
+.featured-book img {
+  width: 60%;
+  height: 50%;
+}
+.featured-books-title ,.reviews-title,.blog-title{
+  text-align: center;
+}
+.reviews-title{
+  margin-top: 0px;
+}
+.btn1{
+  padding: 0.7vw 2.5vh;
+  
+  border: 2px solid var(--main-color);
+  color: #0f0202;
+  text-decoration: none;
+  width: 6vw;
+  text-align: center; 
+}
+.featured-book p:first-of-type {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin:  1vh 0px 0px 0px;
+}
+.featured-book p:nth-child(3){
+  color: gray;
+  font-size: 1em;
+  font-weight: 200;
+  
+}
+/*.....................arraivel-book........................*/
+
+h5{
+  color:var(--main-color);
+  font-size: 1em;
+  font-weight:500;
+  margin: 0;
+}
+.arrival-book-title{
+  text-align: center;
+  padding-top: 10vh;
+}
+.arrival-book {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  row-gap: 3vh ;
+  justify-items: center;
+}
+
+.arrival-book .arrival-books{
+  width: 17vw;
+  border: rgb(100, 99, 99) solid 1px;
+}
+.arrival-books .hover-div{
+  width: 60%;
+  height: 60%; 
+  overflow: hidden; 
+  display: inline-block;
+  justify-content: center; 
+  box-shadow: 0px 0px 5px 1px hsl(0, 1%, 48%); 
+  border: none;
+}
+.arrival-books img{
+  width: 100%;
+  height: 100%;
+
+}
+.arrival-book div  p:nth-of-type(1){
+  font-size: 1em;
+  margin:  1vh 0px 0px 0px;
+}
+.arrival-book div  p:nth-of-type(2){
+  margin:  1vh 0px 3vh 0px;
+  color: var(--main-color);
+}
+.arrival-book .arrival-books:hover {
+
+  box-shadow: 0px 0px 5px 3px hsl(180, 53%, 69%);
+}
+.arrival-books img:hover{
+ 
+  transition: 0.5s;
+  transform: scale(1.2);
+  
+}
+/*....................................................*/
+.reviews-container{
+  column-gap: 2vw;
+  display: grid;
+  padding:  0px 2vw;
+  grid-template-columns: repeat(4,auto) ;
+}
+
+.review-head{
+  display: flex;
+  justify-content:space-between;
+}
+.review-head i{
+  font-size: 7.5em;
+  color: #ccdbd5;
+}
+.review-head img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  align-self: center;
+}
+.person-review{
+  padding: 1.5vh;
+  padding-top: 0;
+  text-align:justify;
+  box-shadow: 0px 0px 5px 2px var(--main-color);
+}
+.person-review p{
+  margin-bottom: 0px;
+}
+.person-review p:nth-of-type(1){
+  margin-top: 0px;
+  font-weight: 600;
+}
+.person-review p:nth-of-type(3){
+  color: var(--main-color);
+}
+
+
+/*........................................*/
+
+.banner-img{
+  background-image: url(image/banner.jpg);
+  width: 100%;
+  height: 50vh;
+  margin-top: 5vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner-btn{
+ margin-top: 35vh;
+ display: inline-block;
+ margin-left: 8vw;
+}
+/*.................blog....................*/
+.blog-container{
+ 
+  display: grid;
+  grid-template-columns:repeat(3,auto);
+  column-gap: 1.5vw;
+  padding:  0px 3vw; 
+}
+.blog{
+  padding-bottom: 1vw;
+  margin: 0px;
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: 0px 0px 5px 1px gray;
+}
+.blog div{
+  padding: 0px 4vh ;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.blog img{
+  width: 100%;
+  height: 13rem;
+}
+
+.blog p:nth-of-type(1){
+  font-size: 1.5em;
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+.blog p:nth-of-type(2){
+  margin: 0px;
+  color: #242424;
+  text-align: justify;
+  
+}
+.blog i{
+  color: var(--main-color);
+  size: 1vw;
+}
+.information-box{
+  width: 100%;
+  height: auto;
+  background-color:hsl(0deg 0% 92%); 
+  margin: 6vh 0px 0px 0px;
+  padding: 2vh 0px;
+}
+.information{
+  width: 95%;
+  display: grid;
+  margin-left: 3vw;
+  margin-right: 0px;
+  grid-template-columns: repeat(5,15vw);
+  grid-gap: 5vh 5vw ;
+  text-align: justify;
+}
+.text-box{
+padding: 1vh;
+border-radius: 3vh;
+background-color: #d1cfcf;
+border: 0px;
+}
+.button{
+  margin-top:1vh ;
+  padding: 1vh 1.5vh 1vh 1.5vh;
+  border-radius: 3vh;
+  background-color:var(--main-color);
+  color: white;
+  border: 0px;
+  }
+.paragraph{
+  font-size: 0.8em;
+  line-height: 3vh;
+  margin-top: 2vw;
+  margin-right: 1.5vw;
+}
+  .paragraph1{
+  font-size: 1.5em;
+  font-weight: 550;
+  }
+.paragragh2{
+  text-align: center;
+  font-size: 0.7em;
+}
+.paragragh2 i ,span{
+  color: var(--main-color);
+}
+.icons1{
+  width: 6vw;
+  display: flex;
+  justify-content: space-between;
+}
+.icons1 i{
+  font-size:1.2vw;
+}
+
+
+
+/*...................................................................................
+............................................................./////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////*/
+ 
+
+
+
+
+
+@media only screen and (max-width: 414px){ 
+nav {
+  flex-direction: row;
+}
+
+.logo{
+  width: 7vw;
+  margin-left: 1vh;
+}
+
+nav ul li a {
+  padding: 10px 0px 10px 10px;
+}
+
+nav ul {
+padding:0px;
+}
+
+.nav-icons i{
+  display: none;
+}
+
+body{
+  font-size: 13px;
+} 
+.home {
+  grid-template-columns: 100%;
+  min-height: 60vh;
+  padding: 10px;
+}
+
+h1{
+font-size: 2em;
+}
+
+.btn{
+  width: fit-content;
+  padding: 0.7em 2em;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.about ,.home{
+  display: inline-block;
+  margin-top: 0%;
+}
+
+.about{
+  padding: 2vw;
+}
+
+.about-page{
+  background-image: url(image/bg.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: top;
+}
+
+.about-img{
+  display: none;
+}
+
+.about-us{
+  text-align: center;
+}
+
+.about-page a{
+  align-self: center;
+}
+
+.Featured-icon{
+  font-size: 5vw;
+}
+
+.container  {
+  margin: 0px ;
+}
+
+
+.books div {
+  border-radius: 5px;
+  width: 45vw;
+  height: 35vh;
+  padding: 0;
+  margin: 0;
+}
+
+.featured-book p:first-of-type {
+  font-size: 1em;
+}
+
+.arrival-book {
+  grid-template-columns: auto auto ;
+  margin:0vh;
+  grid-gap: 1vh 0vw;  
+}
+
+.arrival-book .arrival-books{
+  box-sizing: border-box;
+  width: 40vw;
+  height: 30vh;
+  margin: 0px ;
+  background-color: #ffffff;
+  border: rgb(100, 99, 99) solid 1px;
+  text-align: center;
+}
+
+.arrival-book-title{
+  padding-top: 1vh;
+}
+
+.reviews-container{
+  display: flex;
+  padding:  0px 2vw;
+  flex-direction: column;
+}
+.review-head{
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  margin-top: 0px;
+  justify-content:space-between;
+}
+.review-head img{
+ margin-top: 1vh;
+}
+.person-review{
+  margin: 1.5vh;
+}
+
+.banner-btn{
+  margin-top: 12vh;
+  display: inline-block;
+  margin-left: 8vw;
+}
+
+.banner-img{
+  
+  width: 100%;
+  height: 20vh;
+  margin-top: 2vh;
+  background-size:contain;
+
+}
+
+.blog-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog{
+  margin: 2vw;
+}
+
+/*--------------------info-media-quiry------------------*/
+
+.information{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}    
+.paragraph{
+  font-size: 1em;
+  line-height: 2vh;
+  
+}
+.paragraph1{
+  margin-top: 0vw;
+  font-size: 1.5em;
+  font-weight: 550;
+}
+.logo1{
+  width: 7vh;
+}
+
+.button{
+  margin-bottom:2vh ;
+}
+
+.icons1{
+  width: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons1 i{
+  font-size:1.5vh;
+}
+
+.paragragh2{
+  font-size: 1.5vh;
+}
+
+}
+ /*//////////////////////////////////////////////////////////////////////
+ //////////////////////////////////////////////////////////////////////
+ //////////////////////////////////////////////////////////////////////
+ */
+@media only screen and (min-width:900px)and (max-width:1020px){ 
+  body{
+    font-size: 25px;
+  }
+  nav {
+    flex-direction: row;
+  }
+  
+  .logo{
+    width: 7vw;
+    margin-left: 1vh;
+  }
+  
+  nav ul li a {font-size: 20px;
+    padding: 10px 0px 10px 10px;
+    margin-left: 1.5vh;
+  }
+  
+  nav ul {
+  padding:0px;
+  
+  }
+  
+  
+  
+  
+  .home {
+    grid-template-columns: 100%;
+    min-height: 60vh;
+    padding: 10px;
+  }
+  
+  h1{
+  font-size: 2em;
+  }
+  
+  .btn{
+    width: fit-content;
+    padding: 0.7em 2em;
+    font-size: 0.7em;
+    margin: 0;
+  }
+  
+  .about ,.home{
+    display: inline-block;
+    margin-top: 0%;
+  }
+  
+  .about{
+    padding: 2vw;
+  }
+  
+  .about-page{
+    background-image: url(image/bg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: top;
+  }
+  
+  .about-img{
+    display: none;
+  }
+  
+  .about-us{
+    text-align: center;
+  }
+  
+  .about-page a{
+    align-self: center;
+  }
+  
+  .Featured-icon{
+    font-size: 5vw;
+  }
+  
+  .container  {
+    margin: 0px ;
+  }
+  
+  
+  .books div {
+    border-radius: 5px;
+    width: 45vw;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .featured-book p:first-of-type {
+    font-size: 1em;
+  }
+  
+  .arrival-book {
+    grid-template-columns: auto auto ;
+    margin:0vh;
+    grid-gap: 1vh 0vw;  
+  }
+  
+  .arrival-book .arrival-books{
+    box-sizing: border-box;
+    width: 40vw;
+    height: auto;
+    margin: 0px ;
+    background-color: #ffffff;
+    border: rgb(100, 99, 99) solid 1px;
+    text-align: center;
+  }
+  
+  .arrival-book-title{
+    padding-top: 1vh;
+  }
+  
+  .reviews-container{
+    display: flex;
+    padding:  0px 2vw;
+    flex-direction: column;
+  }
+  .review-head{
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin-top: 0px;
+    justify-content:space-between;
+  }
+  .review-head img{
+   margin-top: 1vh;
+   width: 20vw;
+   height: 20vw;
+  }
+  .review-head i {
+    font-size: 5em;
+    color: #ccdbd5;
+}
+.person-review p:nth-of-type(1) {
+  margin-top: 0px;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+  .person-review{
+    margin: 1.5vh;
+  }
+  
+  .banner-btn{
+    margin-top: 13vh;
+    display: inline-block;
+    margin-left: 8vw;
+  }
+  
+  .banner-img{
+    
+    width: 100%;
+    height: 20vh;
+    margin-top: 2vh;
+  
+  }
+  
+  .blog-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .blog{
+    margin: 2vw;
+  }
+  
+  /*--------------------info-media-quiry------------------*/
+  
+  .information{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }    
+  .paragraph{
+    font-size: 1em;
+   
+    
+  }
+  .paragraph1{
+    margin-top: 0vw;
+    font-size: 1.5em;
+    font-weight: 550;
+  }
+  .logo1{
+    width: 7vh;
+  }
+  
+  .button{
+    margin-bottom:2vh ;
+  }
+  
+  .icons1{
+    width: 10vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icons1 i{
+    font-size:1.5vh;
+  }
+  
+  .paragragh2{
+    font-size: 1.5vh;
+  }
+  .blog img {
+    width: 100%;
+    height: 35vh;
+}
+  }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////\
+////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+*/
+  @media only screen and (min-width:1024px){ 
+    body{
+      font-size: 23px;
+    }
+    nav {
+      flex-direction: row;
+    }
+    
+    .logo{
+      width: 7vw;
+      margin-left: 1vh;
+    }
+    
+    nav ul li a {font-size: 20px;
+      padding: 10px 0px 10px 10px;
+      margin-left: 1.5vh;
+    }
+    
+    nav ul {
+    padding:0px;
+    
+    }
+    
+    
+    
+    
+    .home {
+      grid-template-columns: 100%;
+      min-height: 60vh;
+      padding: 10px;
+    }
+    
+    h1{
+    font-size: 2em;
+    }
+    
+    .btn{
+      width: fit-content;
+      padding: 0.7em 2em;
+      font-size: 0.7em;
+      margin: 0;
+    }
+    
+    .about ,.home{
+      display: inline-block;
+      margin-top: 0%;
+    }
+    
+    .about{
+      padding: 2vw;
+    }
+    
+    .about-page{
+      background-image: url(image/bg.png);
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: top;
+    }
+    
+    .about-img{
+      display: none;
+    }
+    
+    .about-us{
+      text-align: center;
+    }
+    
+    .about-page a{
+      align-self: center;
+    }
+    
+    .Featured-icon{
+      font-size: 5vw;
+    }
+    
+    .container  {
+      margin: 0px ;
+    }
+    
+    
+    .books div {
+      border-radius: 5px;
+      width: 25vw;
+      height: 65vh;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .featured-book p:first-of-type {
+      font-size: 1em;
+    }
+    
+    .arrival-book {
+      grid-template-columns: auto auto auto;
+      margin:0vh;
+      grid-gap: 1vh 0vw;  
+    }
+    
+    .arrival-book .arrival-books{
+      box-sizing: border-box;
+      width: 30vw;
+      height: 55vh;
+      margin: 0px ;
+      background-color: #ffffff;
+      border: rgb(100, 99, 99) solid 1px;
+      text-align: center;
+    }
+    
+    .arrival-book-title{
+      padding-top: 1vh;
+    }
+    
+    .reviews-container{
+      display: flex;
+      padding:  0px 2vw;
+      overflow-x: auto;
+    }
+    .review-head{
+      box-sizing: border-box;
+      align-items: center;
+      width: 100%;
+      display: flex;
+      margin-top: 0px;
+      justify-content:space-between;
+    }
+    .review-head img{
+     margin-top: 1vh;
+     width: 10vw;
+     height: 10vw;
+    }
+    .review-head i {
+      font-size: 3em;
+      color: #ccdbd5;
+  }
+  .person-review p:nth-of-type(1) {
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+    .person-review{
+      margin: 1.5vh;
+    }
+    
+    .banner-btn{
+      margin-top: 30vh;
+      display: inline-block;
+      margin-left: 8vw;
+    }
+    
+    .banner-img{
+      
+      width: 100%;
+      background-size: contain;
+      margin-top: 2vh;
+      
+    
+    }
+    
+    .blog-container{
+      display: flex;
+      
+      justify-content: center;
+    }
+    
+    .blog{
+      margin: 2vw;
+    }
+    
+    /*--------------------info-media-quiry------------------*/
+    
+    .information{
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+    }    
+    .paragraph{
+      font-size: 1em;
+      
+      
+    }
+    .paragraph1{
+      margin-top: 0vw;
+      font-size: 1.5em;
+      font-weight: 550;
+    }
+    .logo1{
+      width: 7vh;
+    }
+    
+    .button{
+      margin-bottom:2vh ;
+    }
+    
+    .icons1{
+      width: 10vh;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .icons1 i{
+      font-size:1.5vh;
+    }
+    
+    .paragragh2{
+      font-size: 1.5vh;
+    }
+    .blog img {
+      width: 100%;
+      height: 35vh;
+  }
+    }
+  
+    @media only screen and (min-width: 415px)and (max-width: 899px){ 
+      nav {
+        flex-direction: row;
+      }
+      
+      .logo{
+        width: 7vw;
+        margin-left: 1vh;
+      }
+      
+      nav ul li a {font-size: 20px;
+        padding: 10px 0px 10px 10px;
+        margin-left: 1.5vh;
+      }
+      
+      nav ul {
+      padding:0px;
+      
+      }
+      
+      
+      
+      
+      .home {
+        grid-template-columns: 100%;
+        min-height: 60vh;
+        padding: 10px;
+      }
+      
+      h1{
+      font-size: 2em;
+      }
+      
+      .btn{
+        width: fit-content;
+        padding: 0.7em 2em;
+        font-size: 0.7em;
+        margin: 0;
+      }
+      
+      .about ,.home{
+        display: inline-block;
+        margin-top: 0%;
+      }
+      
+      .about{
+        padding: 2vw;
+      }
+      
+      .about-page{
+        background-image: url(image/bg.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: top;
+      }
+      
+      .about-img{
+        display: none;
+      }
+      
+      .about-us{
+        text-align: center;
+      }
+      
+      .about-page a{
+        align-self: center;
+      }
+      
+      .Featured-icon{
+        font-size: 5vw;
+      }
+      
+      .container  {
+        margin: 0px ;
+      }
+      
+      
+      .books div {
+        border-radius: 5px;
+        width: 25vw;
+      height:40vh;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .featured-book p:first-of-type {
+        font-size: 1em;
+      }
+      
+      .arrival-book {
+        grid-template-columns: auto auto auto;
+        margin:0vh;
+        grid-gap: 1vh 0vw;  
+      }
+      
+      .arrival-book .arrival-books{
+        box-sizing: border-box;
+        width: 30vw;
+        margin: 0px ;
+        background-color: #ffffff;
+        border: rgb(100, 99, 99) solid 1px;
+        text-align: center;
+      }
+      
+      .arrival-book-title{
+        padding-top: 1vh;
+      }
+      
+      .reviews-container{
+        display: flex;
+        padding:  0px 2vw;
+        flex-direction: column;
+      }
+      .review-head{
+        box-sizing: border-box;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        margin-top: 0px;
+        justify-content:space-between;
+      }
+      .review-head img{
+       margin-top: 1vh;
+       width: 10vw;
+       height: 10vw;
+      }
+      .review-head i {
+        font-size: 3em;
+        color: #ccdbd5;
+    }
+    .person-review p:nth-of-type(1) {
+      margin-top: 0px;
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+      .person-review{
+        margin: 1.5vh;
+      }
+      
+      .banner-btn{
+        margin-top: 12vh;
+        display: inline-block;
+        margin-left: 8vw;
+      }
+      
+      .banner-img{
+        
+        width: 100%;
+        background-size: contain;
+        margin-top: 2vh;
+        height: 20vh;
+        
+      
+      }
+      
+      .blog-container{
+        display: flex;
+        
+        justify-content: center;
+      }
+      
+      .blog{
+        margin: 2vw;
+      }
+      
+      /*--------------------info-media-quiry------------------*/
+      
+      .information{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+      }    
+      .paragraph{
+        font-size: 1em;
+        
+        
+      }
+      .paragraph1{
+        margin-top: 0vw;
+        font-size: 1.5em;
+        font-weight: 550;
+      }
+      .logo1{
+        width: 7vh;
+      }
+      
+      .button{
+        margin-bottom:2vh ;
+      }
+      
+      .icons1{
+        width: 10vh;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .icons1 i{
+        font-size:1.5vh;
+      }
+      
+      .paragragh2{
+        font-size: 1.5vh;
+      }
+      .blog img {
+        width: 100%;
+        height: 35vh;
+    }
+      }
